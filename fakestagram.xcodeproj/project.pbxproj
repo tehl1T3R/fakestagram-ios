@@ -12,6 +12,16 @@
 		E0DDF9F8223DF642009EB136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF9F7223DF642009EB136 /* Assets.xcassets */; };
 		E0DDF9FB223DF642009EB136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF9F9223DF642009EB136 /* LaunchScreen.storyboard */; };
 		E0DDFA06223DF642009EB136 /* fakestagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA05223DF642009EB136 /* fakestagramTests.swift */; };
+		E0DDFA18223DFCC8009EB136 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA17223DFCC8009EB136 /* Post.swift */; };
+		E0DDFA21223DFE73009EB136 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA1F223DFE73009EB136 /* PostCollectionViewCell.swift */; };
+		E0DDFA22223DFE73009EB136 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0DDFA20223DFE73009EB136 /* PostCollectionViewCell.xib */; };
+		E0DDFA25223E0017009EB136 /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA24223E0017009EB136 /* SVGView.swift */; };
+		E0DDFA27223E029A009EB136 /* PostAuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA26223E029A009EB136 /* PostAuthorView.swift */; };
+		E0DDFA29223E03DC009EB136 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA28223E03DC009EB136 /* Author.swift */; };
+		E0DDFA2B223E04A3009EB136 /* Identicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA2A223E04A3009EB136 /* Identicon.swift */; };
+		E0DDFA2E223E0EF2009EB136 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA2D223E0EF2009EB136 /* TimelineViewController.swift */; };
+		E0DDFA31223E181C009EB136 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDFA2F223E181C009EB136 /* PostDetailViewController.swift */; };
+		E0DDFA32223E181C009EB136 /* PostDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0DDFA30223E181C009EB136 /* PostDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,16 @@
 		E0DDFA01223DF642009EB136 /* fakestagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fakestagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DDFA05223DF642009EB136 /* fakestagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakestagramTests.swift; sourceTree = "<group>"; };
 		E0DDFA07223DF642009EB136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DDFA17223DFCC8009EB136 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E0DDFA1F223DFE73009EB136 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0DDFA20223DFE73009EB136 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		E0DDFA24223E0017009EB136 /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
+		E0DDFA26223E029A009EB136 /* PostAuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthorView.swift; sourceTree = "<group>"; };
+		E0DDFA28223E03DC009EB136 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		E0DDFA2A223E04A3009EB136 /* Identicon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identicon.swift; sourceTree = "<group>"; };
+		E0DDFA2D223E0EF2009EB136 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		E0DDFA2F223E181C009EB136 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		E0DDFA30223E181C009EB136 /* PostDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +95,15 @@
 		E0DDF9EF223DF640009EB136 /* fakestagram */ = {
 			isa = PBXGroup;
 			children = (
+				E0DDFA16223DFCB6009EB136 /* Post */,
+				E0DDFA2C223E0EDB009EB136 /* Timeline */,
+				E0DDFA23223DFFDB009EB136 /* UIComponents */,
 				E0DDF9F0223DF640009EB136 /* AppDelegate.swift */,
 				E0DDF9F4223DF640009EB136 /* Main.storyboard */,
 				E0DDF9F7223DF642009EB136 /* Assets.xcassets */,
 				E0DDF9F9223DF642009EB136 /* LaunchScreen.storyboard */,
 				E0DDF9FC223DF642009EB136 /* Info.plist */,
+				E0DDFA2A223E04A3009EB136 /* Identicon.swift */,
 			);
 			path = fakestagram;
 			sourceTree = "<group>";
@@ -91,6 +115,36 @@
 				E0DDFA07223DF642009EB136 /* Info.plist */,
 			);
 			path = fakestagramTests;
+			sourceTree = "<group>";
+		};
+		E0DDFA16223DFCB6009EB136 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E0DDFA17223DFCC8009EB136 /* Post.swift */,
+				E0DDFA1F223DFE73009EB136 /* PostCollectionViewCell.swift */,
+				E0DDFA20223DFE73009EB136 /* PostCollectionViewCell.xib */,
+				E0DDFA26223E029A009EB136 /* PostAuthorView.swift */,
+				E0DDFA28223E03DC009EB136 /* Author.swift */,
+				E0DDFA2F223E181C009EB136 /* PostDetailViewController.swift */,
+				E0DDFA30223E181C009EB136 /* PostDetailViewController.xib */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		E0DDFA23223DFFDB009EB136 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E0DDFA24223E0017009EB136 /* SVGView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		E0DDFA2C223E0EDB009EB136 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				E0DDFA2D223E0EF2009EB136 /* TimelineViewController.swift */,
+			);
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DDFA22223DFE73009EB136 /* PostCollectionViewCell.xib in Resources */,
 				E0DDF9FB223DF642009EB136 /* LaunchScreen.storyboard in Resources */,
+				E0DDFA32223E181C009EB136 /* PostDetailViewController.xib in Resources */,
 				E0DDF9F8223DF642009EB136 /* Assets.xcassets in Resources */,
 				E0DDF9F6223DF640009EB136 /* Main.storyboard in Resources */,
 			);
@@ -194,7 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DDFA29223E03DC009EB136 /* Author.swift in Sources */,
+				E0DDFA2B223E04A3009EB136 /* Identicon.swift in Sources */,
+				E0DDFA21223DFE73009EB136 /* PostCollectionViewCell.swift in Sources */,
+				E0DDFA25223E0017009EB136 /* SVGView.swift in Sources */,
+				E0DDFA31223E181C009EB136 /* PostDetailViewController.swift in Sources */,
+				E0DDFA18223DFCC8009EB136 /* Post.swift in Sources */,
+				E0DDFA2E223E0EF2009EB136 /* TimelineViewController.swift in Sources */,
 				E0DDF9F1223DF640009EB136 /* AppDelegate.swift in Sources */,
+				E0DDFA27223E029A009EB136 /* PostAuthorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
