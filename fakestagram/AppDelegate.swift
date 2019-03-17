@@ -8,6 +8,13 @@
 
 import UIKit
 
+extension Date {
+    func currentTimestamp() -> Int64 {
+        return Int64(NSDate().timeIntervalSince1970 * 1000)
+    }
+}
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        print(identifier())
         return true
     }
 
@@ -41,6 +50,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func identifier() -> String {
+        print()
+        if let vendorId = UIDevice.current.identifierForVendor {
+            return "\(vendorId.hashValue):\(vendorId.uuidString)"
+        } else {
+            return "\(Date().currentTimestamp()):\(UUID().uuidString)"
+        }
+    }
 
 }
 
