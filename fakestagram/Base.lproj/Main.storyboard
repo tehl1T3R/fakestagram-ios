@@ -119,6 +119,9 @@
                         <viewLayoutGuide key="safeArea" id="FHW-Ip-1uc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Timeline" id="jsQ-MM-rwB"/>
+                    <connections>
+                        <outlet property="postsCollectionView" destination="7tD-34-dHG" id="nIL-e8-hby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2f-8P-Ldm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

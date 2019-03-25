@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0BB9748223F444B00D028A1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB9747223F444B00D028A1 /* Client.swift */; };
+		E0BB974A223F449700D028A1 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB9749223F449700D028A1 /* Secrets.swift */; };
+		E0BB974D223F45EA00D028A1 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB974C223F45EA00D028A1 /* Account.swift */; };
+		E0BB974F223F552B00D028A1 /* UIDevice+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB974E223F552B00D028A1 /* UIDevice+Info.swift */; };
+		E0BB9751223F57C400D028A1 /* Date+timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB9750223F57C400D028A1 /* Date+timestamp.swift */; };
+		E0BB9753223F5DFB00D028A1 /* Names.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0BB9752223F5DFB00D028A1 /* Names.plist */; };
+		E0BB9755223F5EDA00D028A1 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB9754223F5EDA00D028A1 /* Name.swift */; };
+		E0BB9757223F6A3500D028A1 /* AccountRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BB9756223F6A3500D028A1 /* AccountRepo.swift */; };
 		E0DDF9F1223DF640009EB136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DDF9F0223DF640009EB136 /* AppDelegate.swift */; };
 		E0DDF9F6223DF640009EB136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF9F4223DF640009EB136 /* Main.storyboard */; };
 		E0DDF9F8223DF642009EB136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF9F7223DF642009EB136 /* Assets.xcassets */; };
@@ -35,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0BB9747223F444B00D028A1 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		E0BB9749223F449700D028A1 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		E0BB974C223F45EA00D028A1 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E0BB974E223F552B00D028A1 /* UIDevice+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Info.swift"; sourceTree = "<group>"; };
+		E0BB9750223F57C400D028A1 /* Date+timestamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+timestamp.swift"; sourceTree = "<group>"; };
+		E0BB9752223F5DFB00D028A1 /* Names.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Names.plist; sourceTree = "<group>"; };
+		E0BB9754223F5EDA00D028A1 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		E0BB9756223F6A3500D028A1 /* AccountRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepo.swift; sourceTree = "<group>"; };
 		E0DDF9ED223DF640009EB136 /* fakestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fakestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DDF9F0223DF640009EB136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DDF9F5223DF640009EB136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0BB9746223F441400D028A1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E0BB9747223F444B00D028A1 /* Client.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E0BB974B223F45DE00D028A1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				E0BB974C223F45EA00D028A1 /* Account.swift */,
+				E0BB9756223F6A3500D028A1 /* AccountRepo.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		E0DDF9E4223DF640009EB136 = {
 			isa = PBXGroup;
 			children = (
@@ -95,15 +128,22 @@
 		E0DDF9EF223DF640009EB136 /* fakestagram */ = {
 			isa = PBXGroup;
 			children = (
+				E0BB974B223F45DE00D028A1 /* Account */,
 				E0DDFA16223DFCB6009EB136 /* Post */,
 				E0DDFA2C223E0EDB009EB136 /* Timeline */,
 				E0DDFA23223DFFDB009EB136 /* UIComponents */,
+				E0BB9746223F441400D028A1 /* Network */,
 				E0DDF9F0223DF640009EB136 /* AppDelegate.swift */,
 				E0DDF9F4223DF640009EB136 /* Main.storyboard */,
 				E0DDF9F7223DF642009EB136 /* Assets.xcassets */,
 				E0DDF9F9223DF642009EB136 /* LaunchScreen.storyboard */,
 				E0DDF9FC223DF642009EB136 /* Info.plist */,
 				E0DDFA2A223E04A3009EB136 /* Identicon.swift */,
+				E0BB9749223F449700D028A1 /* Secrets.swift */,
+				E0BB974E223F552B00D028A1 /* UIDevice+Info.swift */,
+				E0BB9750223F57C400D028A1 /* Date+timestamp.swift */,
+				E0BB9754223F5EDA00D028A1 /* Name.swift */,
+				E0BB9752223F5DFB00D028A1 /* Names.plist */,
 			);
 			path = fakestagram;
 			sourceTree = "<group>";
@@ -229,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0DDFA22223DFE73009EB136 /* PostCollectionViewCell.xib in Resources */,
+				E0BB9753223F5DFB00D028A1 /* Names.plist in Resources */,
 				E0DDF9FB223DF642009EB136 /* LaunchScreen.storyboard in Resources */,
 				E0DDFA32223E181C009EB136 /* PostDetailViewController.xib in Resources */,
 				E0DDF9F8223DF642009EB136 /* Assets.xcassets in Resources */,
@@ -252,13 +293,20 @@
 			files = (
 				E0DDFA29223E03DC009EB136 /* Author.swift in Sources */,
 				E0DDFA2B223E04A3009EB136 /* Identicon.swift in Sources */,
+				E0BB974F223F552B00D028A1 /* UIDevice+Info.swift in Sources */,
 				E0DDFA21223DFE73009EB136 /* PostCollectionViewCell.swift in Sources */,
 				E0DDFA25223E0017009EB136 /* SVGView.swift in Sources */,
 				E0DDFA31223E181C009EB136 /* PostDetailViewController.swift in Sources */,
+				E0BB974D223F45EA00D028A1 /* Account.swift in Sources */,
 				E0DDFA18223DFCC8009EB136 /* Post.swift in Sources */,
 				E0DDFA2E223E0EF2009EB136 /* TimelineViewController.swift in Sources */,
+				E0BB9755223F5EDA00D028A1 /* Name.swift in Sources */,
 				E0DDF9F1223DF640009EB136 /* AppDelegate.swift in Sources */,
+				E0BB9748223F444B00D028A1 /* Client.swift in Sources */,
 				E0DDFA27223E029A009EB136 /* PostAuthorView.swift in Sources */,
+				E0BB9751223F57C400D028A1 /* Date+timestamp.swift in Sources */,
+				E0BB974A223F449700D028A1 /* Secrets.swift in Sources */,
+				E0BB9757223F6A3500D028A1 /* AccountRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
