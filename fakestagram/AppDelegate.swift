@@ -10,15 +10,12 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let acc = Account.initialize()
-        print(acc)
-        
+        AccountRepo.shared.loadOrCreate { (account) in
+            print(account)
+        }
         return true
     }
 

@@ -9,10 +9,13 @@
 import Foundation
 
 enum Secrets {
+    case host
     case uuid
     
     var value: String? {
         switch self {
+        case .host:
+            return "https://fakestagram-api.herokuapp.com/"
         case .uuid:
             return nil
         }

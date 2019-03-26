@@ -9,22 +9,28 @@
 import Foundation
 
 class AccountRepo {
-    let shared = AccountRepo()
-
-    static func loadOrCreate(success: (Account) -> Void) {
+    static let shared = AccountRepo()
+    let restClient = RestClient<Account>(client: Client.shared, path: "/api/accounts")
+    
+    typealias accountResponse = (Account) -> Void
+    func loadOrCreate(success: accountResponse?) {
         if let account = load() {
-            success(account)
+            success?(account)
             return
         }
         let newAccount = Account.initialize()
-        create(newAccount, success: success)
+        create(newAccount) { account in
+            AccountStorage.shared.item = account
+            AccountStorage.shared.save()
+            success?(account)
+        }
     }
 
-    static func load() -> Account? {
-        return nil
+    func load() -> Account? {
+        return AccountStorage.shared.item
     }
     
-    static func create(_ account: Account, success: (Account) -> Void) {
-        
+    func create(_ account: Account, success: @escaping (Account) -> Void) {
+        restClient.create(codable: account, success: success)
     }
 }
