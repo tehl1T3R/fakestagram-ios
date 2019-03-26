@@ -12,7 +12,6 @@ typealias completionHandler = (HTTPResponse, Data?) -> Void
 typealias errorHandler = (Error?) -> Void
 
 struct Client {
-    static let shared = Client()
     let baseURLComponents: URLComponents
     public var accept = "application/json"
     public var contentType = "application/json"

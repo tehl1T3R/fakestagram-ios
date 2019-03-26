@@ -10,7 +10,7 @@ import Foundation
 
 class AccountRepo {
     static let shared = AccountRepo()
-    let restClient = RestClient<Account>(client: Client.shared, path: "/api/accounts")
+    let restClient = RestClient<Account>(client: Client(), path: "/api/accounts")
     
     typealias accountResponse = (Account) -> Void
     func loadOrCreate(success: accountResponse?) {
