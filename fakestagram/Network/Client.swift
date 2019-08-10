@@ -38,7 +38,7 @@ struct Client {
         request.setValue(contentType, forHTTPHeaderField: "Content-Type")
         request.httpMethod = method
         request.httpBody = body
-        if let token = Secrets.token.value {
+        if let token = Secrets.uuid.value {
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         }
         
